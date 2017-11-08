@@ -46,10 +46,12 @@ $(document).ready(function () {
                     tarjeta += '                <p class="card-text">';
                     tarjeta += data.results[i].opening_crawl;
                     tarjeta += '                </p>';
+                    tarjeta += '<center><button type="button" class="btn btn-primary" id="detalle" data-synopsis="' + data.results[i].opening_crawl + ' <br><br> <strong>Director:</strong> ' + data.results[i].director + ' <br><br> <strong>Productor:</strong> ' + data.results[i].producer + ' <br><br> <strong>Fecha de Estreno:</strong> ' + data.results[i].release_date + ' <br><br> <strong>Personajes que aparecen:</strong> ';
                     for (var j = 0; j < data.results[i].characters.length; j++) {
-                        personaje += cargaPersonaje(data.results[i].characters[j]) + ', ';
-                    }
-                    tarjeta += '<center><button type="button" class="btn btn-primary" id="detalle" data-synopsis="' + data.results[i].opening_crawl + ' <br><br> <strong>Director:</strong> ' + data.results[i].director + ' <br><br> <strong>Productor:</strong> ' + data.results[i].producer + ' <br><br> <strong>Fecha de Estreno:</strong> ' + data.results[i].release_date + ' <br><br> <strong>Personajes que aparecen:</strong> ' + personaje + '." data-title="Episodio: ' + data.results[i].episode_id + ' (' + data.results[i].title + ')" data-toggle="modal" data-target="#exampleModal">Detalle de la Pelicula</button></center>';
+                        personaje = cargaPersonaje(data.results[i].characters[j]) + ', ';
+                        tarjeta += personaje
+                    } 
+                    tarjeta += '." data-title="Episodio: ' + data.results[i].episode_id + ' (' + data.results[i].title + ')" data-toggle="modal" data-target="#exampleModal">Detalle de la Pelicula</button></center>';
                     tarjeta += '            </div>';
                     tarjeta += '    </div>';
                     tarjeta += '</div>';
