@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link rel="stylesheet" href="css/starwars-glyphicons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vehiculos.css">
+  <title>Vehiculos</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="peliculas.html">Peliculas</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="personajes.html">Personajes</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="planetas.html">Planetas</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="vehiculos.html">Vehiculos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="cruceros.html">Cruceros Espaciales</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="col-md row nav rounded-top align-items-strech justify-content-center">
+      <h1>
+        <i class="swg swg-newrep" aria-hidden="true"></i> Bienvenido al mundo de Star Wars
+        <i class="swg swg-newjediorder" aria-hidden="true"></i>
+      </h1>
+    </div>
+    <div class="section">
+      <h1 class="col-md my-4 text-center">
+        <i class="swg swg-falcon-o " aria-hidden="true"></i> Listado de Vehiculos
+        <i class="swg swg-falcon-o " aria-hidden="true"></i>
+      </h1>
+      <div class="col-md-12">
+        <table class="table table-bordered table-dark menu-tabla">
+          <thead>
+            <tr class="menu-tabla">
+              <th scope="col">N°</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Modelo</th>
+              <th scope="col">Longitud</th>
+              <th scope="col">Tripulacion</th>
+              <th scope="col">Pasajeros</th>
+              <th scope="col">Clase de Vehiculo</th>
+            </tr>
+          </thead>
+          <tbody id="vehiculos">
+
+          </tbody>
+        </table>
+      </div>
+      <div class="row col-md-6">
+        <button type="button" class="btn btn-dark" id="prev">Anterior</button>
+        <button type="button" class="btn btn-dark" id="next">Siguiente</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/popper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/vehiculos.js"></script>
+</body>
+
+</html>

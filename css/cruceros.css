@@ -1,0 +1,12 @@
+#cruceros{ 
+    color: white;
+}
+
+.row> #prev,.row>#next{
+    margin: 10px 5px;
+}
+
+table .menu-tabla{
+    background: black;
+    color: white;
+}

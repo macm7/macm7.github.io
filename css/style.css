@@ -1,0 +1,58 @@
+body{
+    background: url('../img/fondo.png');
+}
+
+.slider .carousel{
+    margin-bottom: 50px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    
+}
+.container h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    
+}
+
+.section h1{
+    color: white;
+    font-size: 45px;
+    font-family: 'Cinzel', serif;
+    
+}
+
+.portfolio-item{
+    padding-bottom: 30px;
+}
+
+.nav-item{
+    font-size: 20px;
+}
+
+.section h4 a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+#boton-modal{
+    margin-bottom: 10px;
+}
+
+#titulo-menu{
+    color: rgb(53, 139, 219);
+}
+
+.footer p{
+    color: white;
+    margin-top: 150px;
+    font-size: 22px;
+}
